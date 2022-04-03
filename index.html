@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>portfoliomaking by-Uma</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="hero">
+             <nav>
+                <img src="logo.png.png" class="logo">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">HIREME</a></li>
+                </ul>
+                <img src="moon.png.png" id="icon">
+            </nav>
+            <div class="info">
+                <img src="girl.png.png" width="500px" height="500px" align="right">
+                <h1>I'm <span>Maria</span> Uma</h1>
+                <p>This is my official portfoliowebsite to showcase my all works related to web<br>development and UI design</p>
+
+                <a href="">Download CV</a>
+
+            </div>
+            <div class="social-links">
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-behance"></i></a>
+                <a href=""><i class="fab fa-dribbble"></i></a>
+             </div>
+            
+        </div>
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "sun.png.png";
+                }else{
+                    icon.src = "moon.png.png";
+
+                }
+                }
+            
+        </script>
+    </body>
+</html>
